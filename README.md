@@ -23,7 +23,10 @@ Dating Profile Vault is a dating bio generator and profile vault. Write your Tin
 - Store your dating bio, interests, and Hinge/Bumble prompt answers in one place
 - AI-powered bio rewrites using Apple Intelligence — on-device, no account
 - One-tap copy formatted for Tinder, Bumble, and Hinge
-- Private by design: all data stays on your device — no accounts, no cloud sync, no tracking
+- Vault Keyboard: paste your bio and prompt answers inside any dating app
+- iCloud sync through your own account, with your words stored as encrypted fields
+- Optional Face ID lock
+- Private by design: no accounts, no servers, no tracking; free with no in-app purchases
 
 ## Links
 

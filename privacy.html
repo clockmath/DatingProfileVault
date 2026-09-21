@@ -99,18 +99,26 @@
 
         <div class="content">
             <h2>Overview</h2>
-            <p>Dating Profile Vault is designed with your privacy as a priority. Your dating profile content stays on your device and is never transmitted to external servers.</p>
+            <p>Dating Profile Vault is designed with your privacy as a priority. Your dating profile content stays on your devices and in your own iCloud account. It is never sent to servers we operate, and we have no way to read it.</p>
 
             <h2>Data Collection</h2>
-            <p><strong>We do not collect any personal data.</strong> All information you enter into the app—including bios, interests, job titles, locations, and prompt answers—is stored locally on your device using Apple's SwiftData framework. The only information that leaves your device is the anonymous usage statistics and purchase validation described below, neither of which includes your profile content.</p>
+            <p><strong>We do not collect any personal data.</strong> All information you enter into the app—including bios, interests, job titles, locations, and prompt answers—is stored on your device using Apple's SwiftData framework and, if you are signed in to iCloud, in your private iCloud database. The only information that reaches us is the anonymous usage statistics described below, which never include your profile content.</p>
 
             <h2>Data Storage</h2>
             <ul>
-                <li>All profile data is stored exclusively on your device</li>
+                <li>All profile data is stored on your device</li>
                 <li>Data persists in your device's local storage</li>
                 <li>App settings are stored locally using UserDefaults</li>
-                <li>No cloud sync, no server uploads, no external databases</li>
+                <li>No servers of ours, no accounts, no external databases</li>
+                <li>You can require Face ID, Touch ID, or your passcode to open the app (Settings › Privacy)</li>
             </ul>
+
+            <h2>iCloud Sync</h2>
+            <p>When you are signed in to iCloud, the app keeps a copy of your vault in <strong>your private iCloud database</strong> so it is backed up and appears on your other iPhones. This uses Apple's CloudKit; the data belongs to your Apple ID, and we cannot access it. Your bio, interests, job title, city, education, and prompt answers are stored as <strong>encrypted fields</strong>, which means they are end-to-end encrypted in iCloud regardless of your other iCloud settings.</p>
+            <p>To stop syncing, turn off Dating Profile Vault under Settings › your name › iCloud › Apps Using iCloud. Your data stays on the device.</p>
+
+            <h2>Vault Keyboard</h2>
+            <p>The optional Vault Keyboard pastes your saved bio and prompt answers into other apps. It reads a copy of your vault from a container that only this app and its keyboard can access. iOS requires "Allow Full Access" for any keyboard that reads its app's data; that is the only reason the keyboard asks for it. The keyboard has <strong>no network access</strong>, does not record what you type, and never sends anything anywhere.</p>
 
             <h2>AI Features</h2>
             <p>Dating Profile Vault uses <strong>Apple Intelligence</strong> for AI-powered rewrite suggestions. This processing:</p>
@@ -124,11 +132,8 @@
             <h2>Analytics</h2>
             <p>The app uses <strong>TelemetryDeck</strong> to collect anonymous usage statistics—for example, that a bio was rewritten or a prompt was added. These signals are anonymized on your device before they are sent, are never linked to you, and never include the text of your profile. We use them only to understand which features are used. See <a href="https://telemetrydeck.com/privacy/">TelemetryDeck's privacy policy</a>.</p>
 
-            <h2>Purchases</h2>
-            <p>In-app purchases are processed by Apple and managed with <strong>RevenueCat</strong>, which receives purchase receipts and an anonymous, app-generated identifier to validate your subscription. No profile content is shared with RevenueCat. See <a href="https://www.revenuecat.com/privacy">RevenueCat's privacy policy</a>.</p>
-
             <h2>Third-Party Services</h2>
-            <p>Other than the anonymous analytics and purchase processing described above, this app does not integrate with any advertising or tracking services.</p>
+            <p>The app is free and has no in-app purchases. Other than the anonymous analytics described above and Apple's own iCloud, it does not integrate with any advertising, purchase, or tracking services.</p>
 
             <h2>Data Sharing</h2>
             <p>We do not sell your data, and your profile content is never transmitted to us or to any third party. When you use the copy feature to move content to dating apps, you manually copy text to your clipboard—no automatic transmission occurs.</p>
@@ -136,8 +141,9 @@
             <h2>Data Deletion</h2>
             <p>Delete your data at any time by:</p>
             <ul>
-                <li>Removing individual profiles within the app</li>
-                <li>Uninstalling the app (removes all associated data)</li>
+                <li>Clearing or editing your bio, interests, and prompts within the app</li>
+                <li>Uninstalling the app (removes all data on that device)</li>
+                <li>Deleting the app's iCloud data under Settings › your name › iCloud › Manage Account Storage</li>
             </ul>
 
             <h2>Children's Privacy</h2>
