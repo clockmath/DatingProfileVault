@@ -17,13 +17,18 @@
 
 ## About the App
 
-Dating Profile Vault is a dating bio generator and profile vault. Write your Tinder, Bumble, and Hinge bio once, sharpen it with free on-device AI, and copy it to any dating app — no account, no cloud.
+Dating Profile Vault is a dating bio generator and profile vault. Write your Tinder, Bumble, and Hinge bio once, sharpen it with free on-device AI, and copy it to any dating app — no account, no servers of ours.
 
 **Features:**
 - Store your dating bio, interests, and Hinge/Bumble prompt answers in one place
 - AI-powered bio rewrites using Apple Intelligence — on-device, no account
-- One-tap copy formatted for Tinder, Bumble, and Hinge
-- Private by design: all data stays on your device — no accounts, no cloud sync, no tracking
+- One-tap copy, with live character meters for Tinder, Bumble, and Hinge
+- Vault Keyboard: paste your bio and prompt answers inside any dating app
+- Photo Check: blur, lighting, and face checks on your device
+- Multiple profiles: keep a version for each app
+- iCloud sync through your own account, with your words stored as encrypted fields
+- Optional Face ID lock
+- Private by design: no accounts, no servers of ours, no tracking; anonymous usage statistics only, never your words; free with no in-app purchases
 
 ## Links
 
