@@ -95,22 +95,36 @@
         <a href="index.html" class="back-link">&larr; Back to Home</a>
 
         <h1>Privacy Policy</h1>
-        <p class="updated">Last Updated: September 21, 2026</p>
+        <p class="updated">Last Updated: September 26, 2026</p>
 
         <div class="content">
             <h2>Overview</h2>
-            <p>Dating Profile Vault is designed with your privacy as a priority. Your dating profile content stays on your device and is never transmitted to external servers.</p>
+            <p>Dating Profile Vault is designed with your privacy as a priority. Your dating profile content stays on your devices and in your own iCloud account. It is never sent to servers we operate, and we have no way to read it.</p>
 
             <h2>Data Collection</h2>
-            <p><strong>We do not collect any personal data.</strong> All information you enter into the app—including bios, interests, job titles, locations, and prompt answers—is stored locally on your device using Apple's SwiftData framework. The only information that leaves your device is the anonymous usage statistics and purchase validation described below, neither of which includes your profile content.</p>
+            <p><strong>We do not collect any personal data.</strong> All information you enter into the app—including bios, interests, job titles, locations, and prompt answers—is stored on your device using Apple's SwiftData framework and, if you are signed in to iCloud, in your private iCloud database. The only information that reaches us is the anonymous usage statistics described below, which never include your profile content.</p>
 
             <h2>Data Storage</h2>
             <ul>
-                <li>All profile data is stored exclusively on your device</li>
+                <li>All profile data is stored on your device</li>
                 <li>Data persists in your device's local storage</li>
                 <li>App settings are stored locally using UserDefaults</li>
-                <li>No cloud sync, no server uploads, no external databases</li>
+                <li>No servers of ours, no accounts, no external databases</li>
+                <li>You can require Face ID, Touch ID, or your passcode to open the app (Settings › Privacy)</li>
             </ul>
+
+            <h2>iCloud Sync</h2>
+            <p>When you are signed in to iCloud, the app keeps a copy of your vault in <strong>your private iCloud database</strong> so it is backed up and appears on your other iPhones. This uses Apple's CloudKit; the data belongs to your Apple ID, and we cannot access it. Your bio, interests, job title, city, education, and prompt answers are stored as <strong>encrypted fields</strong>, which means they are end-to-end encrypted in iCloud regardless of your other iCloud settings. Profile names (for example "Hinge"), record identifiers, dates, and the order of your prompts are standard CloudKit fields: iCloud encrypts them in transit and at rest, but they are end-to-end encrypted only if you turn on Advanced Data Protection.</p>
+            <p>To stop syncing, turn off Dating Profile Vault under Settings › your name › iCloud › Apps Using iCloud. Your data stays on the device.</p>
+
+            <h2>Photo Check</h2>
+            <p>Photo Check looks at a photo you choose and tells you what a match will notice: blur, lighting, and whether your face is clear. All of this runs on your device using Apple's on-device image frameworks. The photo is never uploaded and nothing from it is stored, and the app asks for no access to your photo library: you pick the one photo to check. The anonymous usage statistics described below record only that a check ran and how many warnings it raised; never the photo or any value read from it.</p>
+
+            <h2>Vault Keyboard</h2>
+            <p>The optional Vault Keyboard pastes your saved bio and prompt answers into other apps. It reads a copy of your vault from a container that only this app and its keyboard can access. iOS requires "Allow Full Access" for any keyboard that reads its app's data; that is the only reason the keyboard asks for it. The keyboard has <strong>no network access</strong>, does not record what you type, and never sends anything anywhere. It keeps a count of how many times you inserted something; the app includes that number, and nothing else from the keyboard, in the anonymous usage statistics described below.</p>
+
+            <h2>Siri and Shortcuts</h2>
+            <p>The app offers Shortcuts and Siri phrases such as "Copy my bio from Dating Profile Vault". The copy shortcuts read the same on-device copy of your vault the keyboard uses and place the text on your clipboard; they run without opening the app and stop working while App Lock is engaged, the same as the keyboard. "Write an Opener" and "Open Profile" only open the app. Nothing is sent anywhere. The app counts how many times shortcuts ran and includes that number in the usage statistics.</p>
 
             <h2>AI Features</h2>
             <p>Dating Profile Vault uses <strong>Apple Intelligence</strong> for AI-powered rewrite suggestions. This processing:</p>
@@ -122,23 +136,24 @@
             </ul>
 
             <h2>Analytics</h2>
-            <p>The app uses <strong>TelemetryDeck</strong> to collect anonymous usage statistics—for example, that a bio was rewritten or a prompt was added. These signals are anonymized on your device before they are sent, are never linked to you, and never include the text of your profile. We use them only to understand which features are used. See <a href="https://telemetrydeck.com/privacy/">TelemetryDeck's privacy policy</a>.</p>
-
-            <h2>Purchases</h2>
-            <p>In-app purchases are processed by Apple and managed with <strong>RevenueCat</strong>, which receives purchase receipts and an anonymous, app-generated identifier to validate your subscription. No profile content is shared with RevenueCat. See <a href="https://www.revenuecat.com/privacy">RevenueCat's privacy policy</a>.</p>
+            <p>The app uses <strong>TelemetryDeck</strong> to collect anonymous usage statistics—for example, that a bio was rewritten or a prompt was added. Each signal names the event and, where relevant, a category such as the tone or dating app chosen, a count, or an error code (never the error's text). Alongside it, TelemetryDeck's software sends the app version, iOS version, device model, and language, plus a per-device identifier that is hashed with a salt on your device before it is sent, so it cannot be turned back into your device's identity. Signals never include your bio, answers, interests, photos, or anything you type. Like any server that receives a request, TelemetryDeck's servers see your IP address in order to deliver it; under their policy they do not store it. We use the statistics only to understand which features are used, and you can turn them off at any time in the app under Settings › Usage Statistics; nothing is sent while they are off. See <a href="https://telemetrydeck.com/privacy/">TelemetryDeck's privacy policy</a>.</p>
 
             <h2>Third-Party Services</h2>
-            <p>Other than the anonymous analytics and purchase processing described above, this app does not integrate with any advertising or tracking services.</p>
+            <p>The app is free and has no in-app purchases. Other than the anonymous analytics described above and Apple's own iCloud, it does not integrate with any advertising, purchase, or tracking services.</p>
 
             <h2>Data Sharing</h2>
-            <p>We do not sell your data, and your profile content is never transmitted to us or to any third party. When you use the copy feature to move content to dating apps, you manually copy text to your clipboard—no automatic transmission occurs.</p>
+            <p>We do not sell your data, and your profile content is never transmitted to us or to any third party. When you use the copy feature to move content to dating apps, you manually copy text to your clipboard—no automatic transmission occurs. If Universal Clipboard is on, iOS may make your clipboard available on your other Apple devices for a short time; that is an Apple feature under your control.</p>
 
             <h2>Data Deletion</h2>
             <p>Delete your data at any time by:</p>
             <ul>
-                <li>Removing individual profiles within the app</li>
-                <li>Uninstalling the app (removes all associated data)</li>
+                <li>Clearing or editing your bio, interests, and prompts within the app</li>
+                <li>Uninstalling the app (removes all data on that device)</li>
+                <li>Deleting the app's iCloud data under Settings › your name › iCloud › Manage Account Storage</li>
             </ul>
+
+            <h2>Your Rights</h2>
+            <p>Because we hold no personal data about you, there is nothing for us to access, correct, export, or delete on request: your vault is under your control on your devices and in your iCloud account, and the usage statistics cannot be connected to you. If you believe we do hold personal data about you, or have any privacy question, contact us and we will respond.</p>
 
             <h2>Children's Privacy</h2>
             <p>This app is not intended for users under 18 years of age.</p>
@@ -147,7 +162,7 @@
             <p>We may update this privacy policy periodically. Continued use of the app constitutes acceptance of any changes.</p>
 
             <h2>Contact</h2>
-            <p>If you have questions about this privacy policy, contact us at: <a href="mailto:hello@clockmath.com">hello@clockmath.com</a></p>
+            <p>Dating Profile Vault is published by the independent developer named as the seller on its App Store page, who is responsible for this policy. If you have questions about it, contact us at: <a href="mailto:hello@clockmath.com">hello@clockmath.com</a></p>
         </div>
     </div>
 
