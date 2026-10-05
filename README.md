@@ -32,5 +32,5 @@ Dating Profile Vault is a dating bio generator and profile vault. Write your Tin
 
 ## Links
 
-- [Support Page](https://spicyintelchip.github.io/DatingProfileVault/)
-- [Privacy Policy](https://spicyintelchip.github.io/DatingProfileVault/privacy.html)
+- [Support Page](https://clockmath.github.io/DatingProfileVault/)
+- [Privacy Policy](https://clockmath.github.io/DatingProfileVault/privacy.html)
