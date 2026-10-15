@@ -95,7 +95,7 @@
         <a href="index.html" class="back-link">&larr; Back to Home</a>
 
         <h1>Privacy Policy</h1>
-        <p class="updated">Last Updated: October 14, 2026</p>
+        <p class="updated">Last Updated: October 15, 2026</p>
 
         <div class="content">
             <h2>Overview</h2>
@@ -118,12 +118,12 @@
             <p>To stop syncing, turn off Dating Profile under Settings › your name › iCloud › Apps Using iCloud. Your data stays on the device.</p>
 
             <h2>Photo Check</h2>
-            <p>Photo Check looks at the photo or photos you choose (up to six) and tells you what a match will notice: blur, lighting, whether your face is clear, and, for a set, how the photos work together. All of this runs on your device using Apple's on-device image frameworks. Your photos are never uploaded and nothing from them is stored, and the app asks for no access to your photo library: you pick the photos to check. The anonymous usage statistics described below record only that a check ran, how many photos were in it, and how many warnings it raised; never a photo or any value read from one.</p>
+            <p>Photo Check looks at the photo or photos you choose (up to six) and checks them for things that tend to hold a profile photo back: whether your face is in focus and well lit, whether it is big enough to recognise and whether it is just you, whether the image is big enough to look sharp, and, for a set, how the photos work together, including whether two of them look alike. These are automatic checks, not a judgement of how you look. All of this runs on your device using Apple's on-device image frameworks. Your photos are never uploaded and nothing from them is stored, and the app asks for no access to your photo library: you pick the photos to check. The anonymous usage statistics described below record only that a check ran, how many photos were in it, and how many warnings it raised; never a photo or any value read from one.</p>
 
             <h2>Face Data</h2>
             <p>Photo Check uses Apple's Vision framework, on your device, to find faces in the photos you choose. This section describes everything the app does with that information.</p>
             <ul>
-                <li><strong>What is collected:</strong> for each face Vision finds in a photo you picked, a rectangle marking where the face is. The app uses only two things from it: how many faces there are, and how tall the largest face is compared with the photo. That is how it tells you whether your face is clear, too small, or one of several in a group shot. The app does not identify or recognise anyone, does not compare faces between photos, and does not read facial features, landmarks, expressions or any other biometric data.</li>
+                <li><strong>What is collected:</strong> for each face Vision finds in a photo you picked, a rectangle marking where the face is, and Vision's capture-quality score for it (how clearly the face was captured: focus, lighting and angle). The app uses these to count the people in the photo (leaving out small faces in the background), to measure how big the largest face is, to measure how bright and how sharp the photo is inside that rectangle, and, in a set, to suggest which photo to lead with. That is how it tells you whether your face is clear, in shadow, too small, or one of several in a group shot. The app does not identify or recognise anyone and does not compare faces between photos. To notice two near-identical photos in a set, it compares the photos as a whole, not the faces in them. It does not read facial landmarks, expressions or any other biometric data.</li>
                 <li><strong>Where it is stored:</strong> only in your device's memory, while the photos are shown in Photo Check. It is never written to your device's storage, to iCloud, or anywhere else.</li>
                 <li><strong>How long it is kept:</strong> until you remove or replace the photos, or the app is closed. It is then discarded. Nothing about faces is kept between uses.</li>
                 <li><strong>Sharing:</strong> face data is never uploaded and never shared with anyone, including us and any third party. The anonymous usage statistics contain no face data: only that a check ran, how many photos were in it, and how many warnings it raised.</li>
